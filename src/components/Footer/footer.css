@@ -1,0 +1,7 @@
+.footer__container{
+    background-color: var(--color-primary);
+}
+
+p{
+    color: var(--bg-color);
+}
