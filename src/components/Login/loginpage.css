@@ -1,0 +1,93 @@
+.login__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 550px;
+    min-width: 400px;
+    background: var(--color-accent);
+    border-radius: 0.4rem;
+    border: 1px solid transparent;
+    padding: 1rem;
+    transition: var(--transition);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.login__input-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: .2rem 0;
+}
+
+label{
+    font-size: 1.4rem;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+input{
+    border: .1rem solid var(--color-accent);
+    padding-left: 1rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: .4rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: var(--transition);
+}
+
+
+input:focus{
+    outline: .1rem solid var(--bg-color);
+    border: .1rem solid transparent;
+}
+button{
+    margin-bottom: 1rem;
+}
+
+.login__button-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    margin: 1rem 0;
+    justify-content: right;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+      width: var(--container-width-md);
+  }
+}
+
+/* ============= Media queries (Mobile) ======================= */
+
+@media screen and (max-width: 600px) {
+  .login__card{
+    min-width: 350px;
+  }
+}
+
+/* ============= Media queries (Mobile) ======================= */
+
+@media screen and (max-width: 390px) {
+    .login__card{
+      min-width: 200px;
+    }
+    label{
+        font-size: 1rem;
+    }
+    input{
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+  }
